@@ -1,0 +1,202 @@
+/* 基本的なスタイル */
+body {
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  position: relative; /* 擬似要素の位置を調整 */
+  
+}
+
+
+/* ヘッダー全体のスタイル */
+header {
+  display: flex;
+  justify-content: space-between; /* 左右に要素を配置 */
+  align-items: center; /* 垂直方向に中央揃え */
+  padding: 20px;
+  background-color:rgb(0, 56, 46) ; /* 深緑の背景 */
+  color: white;
+}
+
+/* h1のスタイル */
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* リンクと画像のスタイル */
+header .home-link {
+  display: block;
+}
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  user-select: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* インジケーターのスタイル */
+.indicator-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  
+  background-color: #333;
+}
+
+header .home-link img {
+  width: 50px; /* 画像の幅を設定 */
+  height: auto; /* アスペクト比を維持 */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* ホバーアニメーション */
+}
+
+header .home-link img:hover {
+  transform: scale(1.1); /* ホバー時に拡大 */
+}
+
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #205430;
+  font-size: 1.4em;
+ 
+}
+.toggle-item {
+  cursor: pointer; /* クリックできることを示す */
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.toggle-item:hover {
+  color: #1b4d2b; /* ホバー時に少し暗くする */
+}
+
+.toggle-item::after {
+  content: " ▾"; /* 初期状態の三角 */
+  font-size: 0.8em;
+}
+
+.toggle-item.active::after {
+  content: " ▴"; /* 開いたときの三角 */
+}
+
+a:hover {
+  color: #1b4d2b; /* 少し暗い緑 */
+}
+
+/* アニメーション用のクラス */
+
+.price-list {
+  padding-left: 20px;
+  font-size: 1.4em;
+  max-height: 0; /* 初期状態では閉じている */
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease, transform 0.5s ease;
+}
+
+.price-list.show {
+  max-height: 500px; /* 十分な高さを設定（リストの項目数に合わせて調整） */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+img {
+  width: 100%; /* 画面の横幅に合わせる */
+  height: auto; /* 縦横比を保つ */
+  object-fit: cover; /* 必要に応じて画像をカバー */
+}
+
+
+/* 戻るボタンのスタイル */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: none; /* 初期状態では非表示 */
+  opacity: 0; /* 初期状態では透明 */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 1000; /* 他の要素よりも前面に表示 */
+}
+
+.back-to-top img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* 丸い形にする */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.back-to-top:hover img {
+  transform: scale(1.1); /* ホバー時に少し拡大 */
+}
+
+.back-to-top.show {
+  display: block; /* 表示する */
+  opacity: 1; /* 透明度を戻す */
+  transform: translateY(0); /* 元の位置に表示 */
+}
+
+footer {
+  background-color: rgb(0, 56, 46);
+  text-align: center;
+  color: #f4f4f4;
+  padding: 40px;
+}

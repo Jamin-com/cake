@@ -1,0 +1,138 @@
+/* 全体設定 */
+body {
+  margin: 0;
+  font-family:serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+  background-color: rgb(0, 56, 46); /* 深緑 */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header img {
+  max-width: 40%;  /* 画像がヘッダーの幅に収まるように */
+  height: auto;     /* 画像の高さを自動調整 */
+  display: block;   /* 画像の下に余白をなくすためにブロック表示 */
+  margin: 0 auto;   /* 画像を中央に配置 */
+}
+/* メインコンテンツ */
+main {
+  margin-top: 60px; /* ヘッダー分の高さを確保 */
+  padding: 20px;
+}
+
+/* セクション */
+section {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+section {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+section1 {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  
+  background: #ffffff;
+  
+  
+}
+
+/* 画像設定 */
+.center-image {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 80%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.center-image2{
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 80%;
+  height: auto;
+  border-radius: 5px;
+  
+}
+.center-image3 {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
+ 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.closing {
+  display: none;  /* 最初は非表示 */
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 5px;
+  
+  text-align: center;
+  font-size: 1.2em;
+  color: #333;
+  opacity: 0; /* 初期状態で透明 */
+  transition: opacity 1s ease-in-out; /* アニメーションの設定 */
+}
+
+/* スクロールして現れるアニメーション */
+.closing.show {
+  display: block;
+  opacity: 1; /* アニメーション後に表示 */
+}
+
+/* ふわっと表示アニメーション */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.2em;
+  }
+  .center-image,
+  .center-image2,
+  .center-image3 {
+    margin-bottom: 15px;
+  }
+  main {
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホールケーキ</title>
+    <link rel="stylesheet" href="horu.css">
+</head>
+<body>
+    <header>
+        <h1>ホールケーキ</h1>
+        <a href="../index.html" class="home-link">
+            <img src="home.jpg" alt="Home">
+        </a>
+    </header>
+    
+
+<body>
+
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="namadeko.jpg" alt="Namadeko"></div>
+            <div class="slide"><img src="namatyoko.jpg" alt="Namatyoko"></div>
+            <div class="slide"><img src="hurunama.jpg" alt="Hurunama"></div>
+            <div class="slide"><img src="ititaru.jpg" alt="Ititaru"></div>
+            <div class="slide"><img src="suhure.jpg" alt="Suhure"></div>
+        </div>
+    </div>
+
+    <div class="indicator-container">
+        <span class="indicator active"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+    </div>
+
+
+    <main>
+       
+        <section class="about">  
+               
+        
+            <hr>
+        </section>
+        <section class="about">  
+            
+            
+            <div style="background: #fff; border: 1px #ccc solid; box-shadow: 0 2px 3px 0 #ddd; font-size: 100%; padding: 20px;"> <h2>サイズ参考</h2>
+               9cm(3号) 　 2名様食べきりサイズ<br>
+               12cm(4号) 　4名様食べきりサイズ<br>
+               15cm(5号) 　6~8名様サイズ<br>
+               18cm(6号) 　10~12名様サイズ<br>
+               21cm(7号) 　14~16名様サイズ
+                <br>
+                <br></div>
+                <br>
+              
+            </section>
+            クリックで値段表示↓
+            <br>
+            <br>
+            <div style="border: #ffffff solid 1px; border-left: #ededed solid 19px; padding: x; background: #fff; font-size: 90%;"><h2>スタンダード</h2></div>
+        <ul>
+           
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('cream',this)">・生デコレーション▾</a>
+                <ul id="cream" class="price-list">
+                    <li>9cm  - ￥1900(2052)</li>
+                    <li>12cm - ￥3000(3240)</li>
+                    <li>15cm - ￥3650(3942)</li>
+                    <li>18cm - ￥4500(4860)</li>
+                    <li>21cm - ￥5500(5940)</li> 
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('chocolate',this)">・生チョコデコレーション▾</a>
+                <ul id="chocolate" class="price-list">
+                    <li>9cm  - ￥2100(2268)</li>
+                    <li>12cm - ￥3200(3456)</li>
+                    <li>15cm - ￥3750(4050)</li>
+                    <li>18cm - ￥4600(4968)</li>
+                    <li>21cm - ￥5800(6264)</li> 
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('fruit',this)">・フルーツ生デコレーション▾</a>
+                <ul id="fruit" class="price-list">
+                    <li>12cm - ￥3200(3456)</li>
+                    <li>15cm - ￥3950(4266)</li>
+                    <li>18cm - ￥4800(5184)</li>
+                    <li>21cm - ￥5800(6264)</li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('miru',this)">・ミルフレーズ(2月～5月)▾</a>
+                <ul id="miru" class="price-list">
+                    <li>10×10cm - ￥3045(3288)</li>
+                    <li>10×15cm - ￥4110(4438)</li>
+                    <li>15×15cm - ￥5790(6253)</li>
+                    <li>15×20cm - ￥8220(8877)</li>
+                    <li>20×20cm - ￥10080(10886)</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        
+        <div style="border: #ffffff solid 1px; border-left: #ededed solid 19px; padding: x; background: #fff; font-size: 90%;"><h2>タルト</h2></div>
+        <ul>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('ichigo',this)">・いちごタルト(2～5月)▾</a>
+                <ul id="ichigo" class="price-list">
+                    <li>12cm - ￥3195(3450)</li>
+                    <li>16cm - ￥4140(4471)</li>
+                    <li>18cm - ￥4780(5162)</li>
+                    <li>20cm - ￥5480(5918)</li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('gurepu',this)">・グレープフルーツタルト▾</a>
+                <ul id="gurepu" class="price-list">
+                    <li>12cm - ￥3195(3450)</li>
+                    <li>16cm - ￥4140(4471)</li>
+                    <li>18cm - ￥4780(5162)</li>
+                    <li>20cm - ￥5480(5918)</li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('kisetu',this)">・季節のフルーツタルト▾</a>
+                <ul id="kisetu" class="price-list">
+                    <li>12cm - ￥3195(3450)</li>
+                    <li>16cm - ￥4140(4471)</li>
+                    <li>18cm - ￥4780(5162)</li>
+                    <li>20cm - ￥5480(5918)</li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('choco',this)">・ミルクチョコレートタルト▾</a>
+                <ul id="choco" class="price-list">
+                    <li>12cm - ￥3110(3358)</li>
+                    <li>16cm - ￥3940(4255)</li>
+                    <li>18cm - ￥4565(4930)</li>
+                    <li>20cm - ￥5250(5670)</li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('mix',this)">・ミックスベリータルト▾</a>
+                <ul id="mix" class="price-list">
+                    <li>12cm - ￥3110(3358)</li>
+                    <li>16cm - ￥3940(4255)</li>
+                    <li>18cm - ￥4565(4930)</li>
+                    <li>20cm - ￥5250(5670)</li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('powa',this)">・ポワ－ルタルト▾</a>
+                <ul id="powa" class="price-list">
+                    <li>12cm - ￥3110(3358)</li>
+                    <li>16cm - ￥3940(4255)</li>
+                    <li>18cm - ￥4565(4930)</li>
+                    <li>20cm - ￥5250(5670)</li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('lemon',this)">・レモンタルト(季節限定)▾</a>
+                <ul id="lemon" class="price-list">
+                    <li>12cm - ￥3110(3358)</li>
+                    <li>16cm - ￥3940(4255)</li>
+                    <li>18cm - ￥4565(4930)</li>
+                    <li>20cm - ￥5250(5670)</li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('orange',this)">・オレンジタルト(季節限定)▾</a>
+                <ul id="orange" class="price-list">
+                    <li>12cm - ￥3110(3358)</li>
+                    <li>16cm - ￥3940(4255)</li>
+                    <li>18cm - ￥4565(4930)</li>
+                    <li>20cm - ￥5250(5670)</li>
+                    
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <div style="border: #ffffff solid 1px; border-left: #ededed solid 19px; padding: x; background: #fff; font-size: 90%;"><h2> その他</h2></div>
+        <ul>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('monb',this)">・モンブラン(秋冬限定)▾</a>
+                <ul id="monb" class="price-list">
+                    
+                    <li>12cm - ￥3410(3682)</li>
+                    <li>15cm - ￥4140(4471)</li>
+                    <li>18cm - ￥5200(5616)</li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('naru',this)">・ナルシス▾</a>
+                <ul id="naru" class="price-list">
+                    
+                    <li>12cm - ￥2880(3110)</li>
+                    <li>15cm - ￥3410(3682)</li>
+                    <li>18cm - ￥3930(4244)</li>
+                    <li>20cm - ￥4350(4698)</li> 
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('beik',this)">・ベイクドレモン▾</a>
+                <ul id="beik" class="price-list">
+                    <li>16cm - ￥3500(3780)</li>
+                    <li>18cm - ￥3820(4125)</li>
+                    <li>20cm - ￥4040(4363)</li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('gato',this)">・ガトーショコラ▾</a>
+                <ul id="gato" class="price-list">
+                    <li>12cm - ￥2770(3456)</li>
+                    <li>15cm - ￥3560(3844)</li>
+                    <li>18cm - ￥4190(4525)</li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('suhu',this)">・スフレ▾</a>
+                <ul id="suhu" class="price-list">
+                    <li>12cm - ￥2030(2192)</li>
+                    <li>15cm - ￥2650(2862)</li>
+                    <li>18cm - ￥3660(3952)</li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('ni',this)">・二段生デコレーション▾</a>
+                <ul id="ni" class="price-list">
+                    <li>下段15cm　上段9㎝ - ￥4500(4860)</li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="togglePrice('shu',this)">・シュータワー▾</a>
+                <ul id="shu" class="price-list">
+                    <li>￥3150(3402)～</li>
+                    
+                </ul>
+            </li>
+            <section class="about">  
+            ※この他にも、店頭に並ぶケーキを大きなサイズでお作りできます。一部対応できないものがございますのでご了承ください。
+                
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <div style="background: #fffffffc; box-shadow: #e5e5e5 0 0 10px 10px; margin:10px; font-size: 100%; padding: 20px;">
+            ろうそくとプレートは無料でお付けしております。<br><br>その他に<br>
+            ・フルーツの変更や増減<br>
+            ・イラストオーダー<br>
+            ・ケーキの形変更(キャラクター等)<br>
+            ・チョコレート飾り(数字やお花)<br>
+            ・わんちゃん用のケーキ<br>
+            ・アレルギー対応クリーム<br>
+            <br>など有料オプションをご用意しております。詳しくはお電話か店頭にて従業員にご相談ください。
+            <br>
+                    <br>
+                    
+                </section></div>
+        </ul>
+    </main>
+    <!-- ページトップに戻るマーク -->
+<div class="back-to-top">
+    <img src="modosi.png" alt="戻る" />
+</div>
+
+    <footer>
+        <section class="horuf">
+           TEL 022-218-7622
+        </a></section>
+    </footer>
+    <script src="horu.js"></script>
+</body>
+</html>

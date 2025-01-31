@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <html>
+ <head>
+ <meta charset="utf-8" />
+ <title>Navigator Sample</title>
+ </head>
+ <body>
+ <!--地図を表示する-->
+ <div id="gmap" style="width:620px; height:400px"></div>
+ <script>
+ function initMap() {
+   // 地図を生成
+   var gmap = new google.maps.Map(document.getElementById("gmap"), {
+     zoom: 17, // ズームレベルを近づける
+     center: new google.maps.LatLng(38.3215613, 140.8876734), // 中心を経由地点に設定
+     mapTypeId: "roadmap"
+   });
+   // DirectionsServiceオブジェクトの生成
+   var directionsService = new google.maps.DirectionsService();
+   // DirectionsRendererオブジェクトの生成
+   var directionsRenderer = new google.maps.DirectionsRenderer();
+   // directionsRenderer と地図を紐付け
+   directionsRenderer.setMap(gmap);
+   // 起点の設定（泉中央駅の緯度経度）
+   var start = new google.maps.LatLng(38.3214958, 140.8880342); // 泉中央駅
+   // 終点の設定（市名坂字町39-103jaminの緯度経度）
+   var end = new google.maps.LatLng(38.3215613, 140.8876734); // 市名坂字町39-103jamin
+   // リクエストの設定
+   var request = {
+     origin: start, // 出発地点の緯度経度
+     destination: end, // 到着地点の緯度経度
+     // 経由地点
+     waypoints: [
+       { location: new google.maps.LatLng(38.3215613, 140.8876734) } // 新しい経由地点
+     ],
+     travelMode: "WALKING" // トラベルモードを歩きに変更
+   };
+   // ルートのリクエスト
+   directionsService.route(request, function(result, status) {
+     if (status === "OK") {
+       directionsRenderer.setDirections(result); // 結果表示
+     } else {
+       alert("failed: " + status);
+     }
+   });
+ }
+ </script>
+ <script
+   defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpC3KMR_TLfgqLnu_HRgGvKtpyowe30lI&callback=initMap"
+ ></script>
+ </body>
+</html>

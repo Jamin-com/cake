@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family:serif;
+  
+}
+
+header {
+  background-color: rgb(0, 56, 46); /* 深緑 */
+  color: white;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header img {
+  max-width: 45%;  /* 画像がヘッダーの幅に収まるように */
+  height: auto;     /* 画像の高さを自動調整 */
+  display: block;   /* 画像の下に余白をなくすためにブロック表示 */
+  margin: 0 auto;   /* 画像を中央に配置 */
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* アイコン間のスペースを調整 */
+  margin-top: 0px;
+}
+
+.social-link {
+  text-decoration: none;
+  font-size: 0.8em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  background-color:rgb(0, 56, 46); /* 背景色（緑） */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-link:hover {
+  background-color:rgb(2, 83, 68); /* ホバー時の色 */
+  transform: scale(1.1); /* ホバー時に少し大きく */
+}
+
+/* 各リンクの個別スタイル */
+.instagram {
+  background-color: rgb(0, 56, 46); /* Instagramのブランドカラー */
+}
+
+.line {
+  background-color: rgb(0, 56, 46); /* LINEのブランドカラー */
+}
+
+.shindan {
+  background-color: rgb(0, 56, 46); /* Shindanのブランドカラー（仮） */
+}
+.instagram-container {
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* 戻るボタンのスタイル */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: none; /* 初期状態では非表示 */
+  opacity: 0; /* 初期状態では透明 */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 1000; /* 他の要素よりも前面に表示 */
+}
+
+.back-to-top img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* 丸い形にする */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.back-to-top:hover img {
+  transform: scale(1.1); /* ホバー時に少し拡大 */
+}
+
+.back-to-top.show {
+  display: block; /* 表示する */
+  opacity: 1; /* 透明度を戻す */
+  transform: translateY(0); /* 元の位置に表示 */
+}
+
+/* スライドショーのコンテナ */
+.photo-carousel {
+  
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* 最大幅 */
+  height: 500px; /* 任意の高さ */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* 画像を重ねるために絶対配置 */
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease; /* ふわっと変わるアニメーション */
+}
+
+/* 最初の画像を表示 */
+.carousel-image.active {
+  opacity: 1;
+}
+
+
+.information ul {
+  
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.information ul li a {
+  text-decoration: none;
+  color: rgb(72, 72, 72);
+  line-height: normal;
+  color: rgb(72, 72, 72);
+}
+.about{
+  
+  color: rgb(0, 0, 0);
+}
+footer {
+  background-color: rgb(0, 56, 46);
+  text-align: center;
+  color: aliceblue;
+  padding: 20px;
+}
+
+main {
+  background-color: white;
+  padding: 20px;
+}
+
+.saisyuu {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* saisyuu.png のサイズを指定 */
+.saisyuu img {
+  max-width: 400px; /* 必要に応じてサイズを調整 */
+  height: auto; /* アスペクト比を維持 */
+  margin: 0 auto; /* 画像を中央揃え */
+}
+ 
+@media (max-width: 768px) {
+  header {
+      font-size: 1.0rem;
+  }
+
+  .information h2, .information ul li a {
+      font-size: 1.2rem;
+  }
+
+  .photo-carousel {
+      gap: 5px;
+      }
+    }
+  .Galerie {
+   
+    text-align: center;
+    padding-left: 10; /* 左の余白を無効にする */
+    padding-right: 0; /* 右の余白を無効にする */
+   
+  }
+  
+  
