@@ -42,14 +42,14 @@ header .home-link img:hover {
 }
 
 .container {
-  max-width: 950px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
 #searchBox {
   width: 100%;
-  max-width: 400px;
+  max-width: 370px;
   padding: 10px;
   margin: 0 auto 20px;
   display: block;
