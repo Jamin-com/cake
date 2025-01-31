@@ -144,3 +144,53 @@ function togglePrice(id, element) {
         element.innerHTML = element.innerHTML.replace("▾", "▴"); // 三角を上向きに変更
     }
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.querySelector(".slider");
+  const slides = document.querySelectorAll(".slide");
+  const indicators = document.querySelectorAll(".indicator");
+
+  let currentIndex = 0;
+  let startX = 0;
+  let isDragging = false;
+
+  function updateSliderPosition() {
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    indicators.forEach((indicator, index) => {
+      indicator.classList.toggle("active", index === currentIndex);
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSliderPosition();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSliderPosition();
+  }
+
+  // タッチイベントの追加
+  slider.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+  });
+
+  slider.addEventListener("touchmove", (e) => {
+    if (!isDragging) return;
+    let diff = startX - e.touches[0].clientX;
+
+    if (diff > 50) {
+      nextSlide();
+      isDragging = false;
+    } else if (diff < -50) {
+      prevSlide();
+      isDragging = false;
+    }
+  });
+
+  slider.addEventListener("touchend", () => {
+    isDragging = false;
+  });
+});
+
