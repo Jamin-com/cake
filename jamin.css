@@ -22,7 +22,7 @@ header img {
   height: auto;    /* 画像の高さを自動調整 */
   display: block;  /* 画像の下に余白をなくすためにブロック表示 */
   margin: auto;    /* 画像を中央に配置 */
-  transform: translateX(-4%); /* 画面幅の5%だけ左に移動 */
+  transform: translateX(-2%); /* 画面幅の5%だけ左に移動 */
 }
 
 .social-links {
