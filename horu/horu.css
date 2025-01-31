@@ -157,7 +157,7 @@ a:hover {
 
 .price-list {
   padding-left: 20px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   max-height: 0; /* 初期状態では閉じている */
   overflow: hidden;
   opacity: 0;
