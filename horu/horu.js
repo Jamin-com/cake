@@ -130,7 +130,17 @@ slider.addEventListener('mouseup', () => {
     }
     updateSlidePosition();
 });
-
+// 画面サイズに応じて動的に変更
+window.addEventListener('resize', function() {
+    const width = window.innerWidth;
+    if (width <= 767) {
+        console.log('スマホサイズ');
+        // スマホサイズに合わせた操作
+    } else {
+        console.log('タブレットまたはデスクトップサイズ');
+        // タブレットやデスクトップサイズに合わせた操作
+    }
+});
 updateIndicators();
 
 function togglePrice(id, element) {
