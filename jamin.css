@@ -105,7 +105,7 @@ header img {
   position: relative;
   width: 100%;
   max-width: 600px; /* 最大幅 */
-  height: 500px; /* 任意の高さ */
+  height: 400px; /* 任意の高さ */
   margin: 0 auto;
   overflow: hidden;
 }
