@@ -29,47 +29,7 @@ header h1 {
 header .home-link {
   display: block;
 }
-.slider-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
 
-.slider {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-}
-
-.slide {
-  min-width: 100%;
-  user-select: none;
-}
-
-img {
-  width: 100%;
-  display: block;
-}
-
-/* インジケーターのスタイル */
-.indicator-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.indicator {
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  background-color: #ccc;
-  border-radius: 50%;
-  transition: background-color 0.3s;
-}
-
-.indicator.active {
-  
-  background-color: #333;
-}
 
 header .home-link img {
   width: 50px; /* 画像の幅を設定 */
@@ -80,6 +40,62 @@ header .home-link img {
 
 header .home-link img:hover {
   transform: scale(1.1); /* ホバー時に拡大 */
+}
+/* 基本スタイル */
+/* 基本スタイル */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* インジケーターのスタイル */
+.indicator-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* インジケーター間のスペース */
+  margin-top: 10px; /* スライドの下にインジケーターを配置 */
+  z-index: 30; /* 画像の上に表示する */
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(182, 182, 182, 0.7);
+  border-radius: 50%;
+}
+
+.indicator.active {
+  background-color: rgb(219, 219, 219);
+}
+
+/* スマートフォン向けのレスポンシブ対応 */
+@media screen and (max-width: 767px) {
+  .indicator {
+    width: 9px;  /* インジケーターのサイズを小さく */
+    height: 9px;
+    margin: 5px; /* 間隔を少し縮小 */
+  }
+
+  .indicator-container {
+    margin-top: 8px; /* インジケーターの余白を少し縮小 */
+  }
 }
 
 
