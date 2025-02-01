@@ -22,7 +22,7 @@ header img {
   height: auto;    /* 画像の高さを自動調整 */
   display: block;  /* 画像の下に余白をなくすためにブロック表示 */
   margin: auto;    /* 画像を中央に配置 */
-  transform: translateX(-2%); /* 画面幅の5%だけ左に移動 */
+  transform: translateX(-4%); /* 画面幅の5%だけ左に移動 */
 }
 
 .social-links {
@@ -100,12 +100,15 @@ header img {
 }
 
 /* スライドショーのコンテナ */
+
+
 .photo-carousel {
   
   position: relative;
   width: 100%;
   max-width: 600px; /* 最大幅 */
-  height: 400px; /* 任意の高さ */
+  height: 100%;
+  height: 550px; /* 任意の高さ */
   margin: 0 auto;
   overflow: hidden;
 }
@@ -116,7 +119,7 @@ header img {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+ 
   opacity: 0;
   transition: opacity 1s ease; /* ふわっと変わるアニメーション */
 }
@@ -178,7 +181,7 @@ main {
   }
 
   .photo-carousel {
-      gap: 2px;
+      gap: 5px;
       }
     }
   .Galerie {
