@@ -40,9 +40,9 @@ const cakes = [
   { name: "安納芋のタルト【季節限定】",  description: "とっても甘いさつまいも安納芋をタルトに！中にはリンゴのコンポート",instagramUrl:"https://www.instagram.com/p/DClnr7fPAPN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
    { name: "パリブレスト",  description: "シュー生地に濃厚なアーモンドクリームをサンドしたフランス伝統菓子",instagramUrl:"https://www.instagram.com/p/DClVrjVP7aV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" }, 
    { name: "レミーマルタン",  description: "洋酒レミーマルタンを味わうためのケーキ。バタークリームとガナッシュ！",instagramUrl:"https://www.instagram.com/p/DEKIAcnPDgW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
- { name: "ミルフレーズ",  description: "いちごの層が三層になったショートケーキの進化版！北海道産生クリーム使用。" },
-{ name: "ロワイヤルフレーズ",  description: "いちごムースの上にはホワイトチョコムース。さらにフレッシュないちご！" },
-{ name: "ショコラアムール",  description: "ハート型のガトーショコラの中にフランボワーズとチョコチップを入れ焼きこみました！" },];
+ { name: "ミルフレーズ【季節限定】",  description: "いちごの層が三層になったショートケーキの進化版！北海道産生クリーム使用。" },
+{ name: "ロワイヤルフレーズ【季節限定】",  description: "いちごムースの上にはホワイトチョコムース。さらにフレッシュないちご！" },
+{ name: "ショコラアムール【季節限定】",  description: "ハート型のガトーショコラの中にフランボワーズとチョコチップを入れ焼きこみました！" },];
 
 const searchBox = document.getElementById('searchBox');
 const cakeList = document.getElementById('cakeList');
