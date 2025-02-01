@@ -114,14 +114,14 @@ header img {
 /* スマートフォン向け */
 @media (max-width: 568px) {
   .photo-carousel {
-    height: 70vh;  /* スマートフォンでは画面高さの30% */
+    height: 60vh;  /* スマートフォンでは画面高さの30% */
   }
 }
 
 /* タブレット・デスクトップ向け */
 @media (min-width: 569px) {
   .photo-carousel {
-    height: 90vh;  /* デスクトップでは画面高さの50% */
+    height: 80vh;  /* デスクトップでは画面高さの50% */
   }
 }
 
