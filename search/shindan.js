@@ -42,7 +42,8 @@ const cakes = [
    { name: "レミーマルタン",  description: "洋酒レミーマルタンを味わうためのケーキ。バタークリームとガナッシュ！",instagramUrl:"https://www.instagram.com/p/DEKIAcnPDgW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
  { name: "ミルフレーズ【季節限定】",  description: "いちごの層が三層になったショートケーキの進化版！北海道産生クリーム使用。" },
 { name: "ロワイヤルフレーズ【季節限定】",  description: "いちごムースの上にはホワイトチョコムース。さらにフレッシュないちご！" },
-{ name: "ショコラアムール【季節限定】",  description: "ハート型のガトーショコラの中にフランボワーズとチョコチップを入れ焼きこみました！" },];
+{ name: "ショコラアムール【季節限定】",  description: "ハート型のガトーショコラの中にフランボワーズとチョコチップを入れ焼きこみました！" },
+{ name: "カシスエマロン【季節限定】",  description: "相性の良いカシスとマロンのムースをクレープで包みました。寒い時期にぴったり" },];
 
 const searchBox = document.getElementById('searchBox');
 const cakeList = document.getElementById('cakeList');
