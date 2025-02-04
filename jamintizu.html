@@ -22,11 +22,11 @@
    var directionsRenderer = new google.maps.DirectionsRenderer();
    // directionsRenderer と地図を紐付け
    directionsRenderer.setMap(gmap);
-   // 起点の設定（泉中央駅の緯度経度）
-   var start = new google.maps.LatLng(38.3214958, 140.8880342); // 泉中央駅
-   // 終点の設定（市名坂字町39-103jaminの緯度経度）
+ 
+   var start = new google.maps.LatLng(38.3214958, 140.8880342); //駐車場
+   
    var end = new google.maps.LatLng(38.3215613, 140.8876734); // 市名坂字町39-103jamin
-   // リクエストの設定
+  
    var request = {
      origin: start, // 出発地点の緯度経度
      destination: end, // 到着地点の緯度経度
