@@ -84,6 +84,21 @@ img {
 .indicator.active {
   background-color: rgb(219, 219, 219);
 }
+.go {
+  cursor: pointer; /* クリック可能なカーソルに変更 */
+  padding: 10px 20px; /* 適度なパディングを追加 */
+  background-color:rgb(1, 81, 66); /* 背景色 */
+  color: white; /* 文字色 */
+  text-align: center; /* テキストを中央に */
+  border-radius: 5px; /* 角を丸める */
+  font-size: 16px; /* フォントサイズ */
+  transition: background-color 0.3s, transform 0.2s ease; /* スムーズな変化 */
+}
+
+.go:hover {
+  background-color:  rgb(30, 142, 121); /* ホバー時に背景色を変更 */
+  transform: scale(1.01); /* ホバー時に少し大きくする */
+}
 
 /* スマートフォン向けのレスポンシブ対応 */
 @media screen and (max-width: 767px) {
