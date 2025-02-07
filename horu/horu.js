@@ -188,3 +188,10 @@ function togglePrice(id, element) {
         element.innerHTML = element.innerHTML.replace("▾", "▴"); // 三角を上向きに変更
     }
 }
+document.querySelector('.go').addEventListener('click', function() {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+    });
+  });
+  
