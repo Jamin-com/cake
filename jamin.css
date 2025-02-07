@@ -178,7 +178,9 @@ main {
 
 /* saisyuu.png のサイズを指定 */
 .saisyuu img {
-  max-width: 400px; /* 必要に応じてサイズを調整 */
+ width: 100%;
+max-width: 500px ;
+
   height: auto; /* アスペクト比を維持 */
   margin: 0 auto; /* 画像を中央揃え */
 }
