@@ -137,9 +137,9 @@ h2 {
 .background-shape {
   position: absolute; /* 絶対配置にして親の中で動かせる */
   top: 0;
-  left: -40px;  /* 図形を少し左にずらす */
+  left: -30px;  /* 図形を少し左にずらす */
   width: 100%; /* 親要素の幅に合わせる */
-  height: 90%; /* 高さは任意で設定 */
+  height: 80%; /* 高さは任意で設定 */
   background-color: rgba(96, 96, 96, 0.9);
   z-index: -2; /* 文字より後ろに配置 */
   animation: slideInFromLeft 1.2s ease-out forwards; 
