@@ -18,7 +18,7 @@ header h1 {
 }
 
 header img {
-  max-width: 45%;  /* 画像がヘッダーの幅に収まるように */
+  max-width: 40%;  /* 画像がヘッダーの幅に収まるように */
   height: auto;    /* 画像の高さを自動調整 */
   display: block;  /* 画像の下に余白をなくすためにブロック表示 */
   margin: auto;    /* 画像を中央に配置 */
