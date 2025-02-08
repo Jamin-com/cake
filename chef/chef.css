@@ -1,0 +1,330 @@
+/* chef.css */
+
+body {
+  margin: 0;
+  font-family: serif;
+}
+
+header {
+  background-color: rgb(0, 56, 46); /* 深緑 */
+  color: white;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header img {
+  max-width: 40%;  /* 画像がヘッダーの幅に収まるように */
+  height: auto;    /* 画像の高さを自動調整 */
+  display: block;  /* 画像の下に余白をなくすためにブロック表示 */
+  margin: auto;    /* 画像を中央に配置 */
+  transform: translateX(-4%); /* 画面幅の5%だけ左に移動 */
+}
+
+/* 背景画像 */
+
+
+
+
+p {
+  font-size: 1.8em;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1em;
+}
+
+
+
+
+
+
+/* ベーススタイル */
+
+.hero h1 {
+  font-size: 3rem;
+  animation: slideInLeft 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  animation: slideInRight 1s ease-out;
+}
+
+.biography {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1.5s ease-out;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #2a3d4b;
+  animation: fadeInUp 1s ease-out;
+}
+
+
+
+/* 親要素 */
+.background {
+  margin-top: 30px;
+  padding: 0;
+  background-color: #ffffff;
+ 
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+/* 親要素に位置を設定 */
+.line-animation {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* ビューポートの高さに合わせる */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 上からスタート */
+
+  overflow: hidden; /* はみ出る部分は非表示に */
+}
+
+/* ラインの設定 */
+.line {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  width: 1px; /* ラインの太さ */
+  height: 0; /* 初期状態では高さがゼロ */
+  background-color: #333; /* ラインの色 */
+  animation: extendLine 10s ease-out forwards;/* アニメーション */
+}
+
+/* ラインが下に伸びるアニメーション */
+@keyframes extendLine {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%; /* 親要素の高さに合わせて伸ばす */
+  }
+}
+
+/* 背景要素をまとめるコンテナ */
+.background-item {
+  position: relative; /* 背景と本文のコンテナ */
+  display: inline-block;
+  width: 100%; /* 横幅100% */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1; /* 背景の上に本文を表示 */
+}
+
+/* 背景図形（長方形など） */
+.background-shape {
+  position: absolute; /* 絶対配置にして親の中で動かせる */
+  top: 0;
+  left: -40px;  /* 図形を少し左にずらす */
+  width: 100%; /* 親要素の幅に合わせる */
+  height: 90%; /* 高さは任意で設定 */
+  background-color: rgba(96, 96, 96, 0.9);
+  z-index: -2; /* 文字より後ろに配置 */
+  animation: slideInFromLeft 1.2s ease-out forwards; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* 影を追加 */
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    left: -100%;  /* 初期位置：画面外の左 */
+  }
+  100% {
+    left: 10;  /* 最終位置：親要素の左端に表示 */
+  }
+}
+/* 背景文字 */
+.background-text {
+  position: absolute;  /* 絶対配置 */
+  top: 30%;  /* 親要素の中央に配置 */
+  left: 30%;  /* 親要素の中央に配置 */
+  transform: translate(-50%, -50%); /* 完全に中央に配置 */
+  font-size: 5rem;  /* 背景文字のサイズ */
+  font-family: "Great Vibes", serif;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.1); 
+  z-index: -1;  /* 背景文字は他の要素より後ろ */
+  white-space: nowrap; /* 改行しない */
+}
+.text-content {
+  position: relative; /* 本文は相対的に配置 */
+  z-index: 1; /* 文字が前面に来るように */
+  color: rgb(255, 255, 255);  /* 本文の色 */
+  font-size: 2.0rem;  /* 本文のサイズ */
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.background2 {
+  margin-top: 30px;
+  padding: 0;
+  background-color: #ffffff;
+ 
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 背景要素をまとめるコンテナ */
+.background-item2{
+  position: relative; /* 背景と本文のコンテナ */
+  display: inline-block;
+  width: 100%; /* 横幅100% */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1; /* 背景の上に本文を表示 */
+}
+
+/* 背景図形（長方形など） */
+.background-shape2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-color: rgba(222, 222, 222, 0.6); /* 背景色 */
+  z-index: -2;
+  /* 擬似ノイズ */
+  background-image: 
+    linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%), 
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%);
+  background-size: 10px 10px; /* ノイズの大きさ */
+}
+
+
+
+/* 本文のスタイル */
+
+.text-content2 {
+  position: relative; /* 本文は相対的に配置 */
+  z-index: 1; /* 文字が前面に来るように */
+  color: rgb(0, 29, 8);  /* 本文の色 */
+  font-size: 1.2rem;  /* 本文のサイズ */
+  padding: 20px;
+  line-height: 1.6;
+  text-align: left;
+   animation: fadeInUp 1s ease-out;
+}
+.instagram-post {
+  position: relative; /* 親要素にrelativeを指定して位置を調整 */
+  margin-top: 40px; /* 上に十分なスペースを追加 */
+  margin-bottom: 20%; /* 下にもスペースを追加して、フッターと被らないようにする */
+  text-align: center; /* 中央揃え */
+  font-size: 1.2rem;
+  border-radius: 20px; /* 親要素の角を丸くする */
+}
+
+.instagram-post iframe {
+  position: relative; /* 絶対位置ではなく、相対位置に変更 */
+  width: 60%; /* 幅を100%にして親要素に合わせる */
+  max-width: 500px; /* 最大幅を600pxに指定 */
+  height: 700px; /* 高さ400px */
+  margin: 0 auto; /* 自動的に中央配置 */
+  display: block; /* インライン要素をブロック要素にして中央寄せ */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* 影を追加 */
+  border-radius: 8px; /* 親要素の角を丸くする */}
+
+@media screen and (max-width: 568px) {
+  .instagram-post iframe {
+    width: 75%; 
+    height: 77vh; /* 高さは少し低く調整 */
+  }
+}
+
+
+
+footer {
+  background-color: rgb(0, 56, 46);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* 背景のアニメーション */
+@keyframes moveBackground {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* 図形を少し拡大 */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
