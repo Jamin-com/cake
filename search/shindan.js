@@ -3,7 +3,7 @@ const cakes = [
   { name: "ショートケーキ", description: "こだわりの生クリームにいちごがぴったり！いちごはたっぷり二層",instagramUrl:"https://www.instagram.com/p/DDlYzvyvjjW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="},
   { name: "生チョコショート",  description: "チョコレートクリームとバナナの相性ぴったりいちごも乗ってるよ",instagramUrl:"https://www.instagram.com/p/DFNFyXHv2Ap/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="},
   { name: "紅茶のロールケーキ", description: "紅茶アールグレイが香るロールケーキ！女性に人気" },
-  { name: "オペラ",  description: "コーヒーとガナッシュ、特製バタークリームの三重奏" },
+  { name: "オペラ",  description: "コーヒーとガナッシュ、特製バタークリームの三重奏",instagramUrl:"https://www.instagram.com/p/DGFk8nKxtTq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
   { name: "ジャマイカ",  description: "ラム酒のかおりがコーヒーの風味に合う大人な味",instagramUrl:"https://www.instagram.com/p/DB3L9rhx3cx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
   { name: "ジャージープリン",  description: "とろとろプリンの上にはおいしい生クリーム！キャラメルソース付き" },
   { name: "ジャージープリン",  description: "美味しいジャージークリームを味わうためのシンプルなロールケーキ！",instagramUrl:"https://www.instagram.com/p/DC6WVytvwSN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
@@ -41,9 +41,10 @@ const cakes = [
    { name: "パリブレスト",  description: "シュー生地に濃厚なアーモンドクリームをサンドしたフランス伝統菓子",instagramUrl:"https://www.instagram.com/p/DClVrjVP7aV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" }, 
    { name: "レミーマルタン",  description: "洋酒レミーマルタンを味わうためのケーキ。バタークリームとガナッシュ！",instagramUrl:"https://www.instagram.com/p/DEKIAcnPDgW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
  { name: "ミルフレーズ【季節限定】",  description: "いちごの層が三層になったショートケーキの進化版！北海道産生クリーム使用。" },
-{ name: "ロワイヤルフレーズ【季節限定】",  description: "いちごムースの上にはホワイトチョコムース。さらにフレッシュないちご！" },
+{ name: "ロワイヤルフレーズ【季節限定】",  description: "いちごムースの上にはホワイトチョコムース。さらにフレッシュないちご！"instagramUrl:"https://www.instagram.com/p/DF7VqSQRV3H/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="},
 { name: "ショコラアムール【季節限定】",  description: "ハート型のガトーショコラの中にフランボワーズとチョコチップを入れ焼きこみました！",instagramUrl:"https://www.instagram.com/p/DFzuuJSPnkp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
-{ name: "カシスエマロン【季節限定】",  description: "相性の良いカシスとマロンのムースをクレープで包みました。寒い時期にぴったり" },];
+{ name: "カシスエマロン【季節限定】",  description: "相性の良いカシスとマロンのムースをクレープで包みました。寒い時期にぴったり" },
+{ name: "タルト・オ・ショコラ・フランボワーズ【季節限定】",  description: "ビターなチョコとフランボワーズを贅沢に合わせました！仕上げは軽いシブーストクリーム",instagramUrl:"https://www.instagram.com/p/DF91-NSRAK-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },];
 
 const searchBox = document.getElementById('searchBox');
 const cakeList = document.getElementById('cakeList');
