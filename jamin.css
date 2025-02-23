@@ -48,25 +48,16 @@ header img {
 }
 
 /* 各リンクの個別スタイル */
-.instagram {
-  background-color: rgb(0, 56, 46); /* Instagramのブランドカラー */
-}
+
 
 .line {
-  background-color: rgb(0, 56, 46); /* LINEのブランドカラー */
+  background-color: rgb(0, 56, 46); 
 }
 
 .shindan {
-  background-color: rgb(0, 56, 46); /* Shindanのブランドカラー（仮） */
+  background-color: rgb(0, 56, 46); 
 }
-.instagram-container {
-  max-width: 500px;
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
 /* 戻るボタンのスタイル */
 .back-to-top {
   position: fixed;
