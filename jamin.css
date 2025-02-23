@@ -96,8 +96,8 @@ header img {
 .photo-carousel {
   position: relative;
   width: 100%;
-  max-width: 600px; /* 最大幅 */
-  height: 40vh;  /* 画面高さの40%に設定（デフォルト） */
+  max-width: 600px; 
+  height: 40vh;  
   margin: 0 auto;
   overflow: hidden;
 }
@@ -105,7 +105,7 @@ header img {
 /* スマートフォン向け */
 @media (max-width: 568px) {
   .photo-carousel {
-    height: 60vh;  /* スマートフォンでは画面高さの30% */
+    height: 60vh;  
   }
 }
 
@@ -124,7 +124,7 @@ header img {
   width: 100%;
  
   opacity: 0;
-  transition: opacity 1s ease; /* ふわっと変わるアニメーション */
+  transition: opacity 1s ease; /* ふわっ */
 }
 
 /* 最初の画像を表示 */
@@ -172,7 +172,7 @@ main {
  width: 100%;
 max-width: 500px ;
 
-  height: auto; /* アスペクト比を維持 */
+  height: auto; /* アスペクト比 */
   margin: 0 auto; /* 画像を中央揃え */
 }
  
@@ -192,8 +192,8 @@ max-width: 500px ;
   .Galerie {
    
     text-align: center;
-    padding-left: 10; /* 左の余白を無効にする */
-    padding-right: 0; /* 右の余白を無効にする */
+    padding-left: 10; 
+    padding-right: 0; /* 右の余白を無効 */
    
   }
   
