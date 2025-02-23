@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 
-  // ボタンをクリックしたらトップに戻る
+  // ボタンをクリックしたらトップ
   backToTopButton.addEventListener('click', () => {
       window.scrollTo({
           top: 0,
