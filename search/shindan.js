@@ -8,7 +8,7 @@ const cakes = [
   { name: "ジャージープリン",  description: "とろとろプリンの上にはおいしい生クリーム！キャラメルソース付き" },
   { name: "ジャージープリン",  description: "美味しいジャージークリームを味わうためのシンプルなロールケーキ！",instagramUrl:"https://www.instagram.com/p/DC6WVytvwSN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
   { name: "スフレ", description: "チーズケーキの定番。シンプルな蔵王チーズのおいしさが味わえるスフレ" },
-  { name: "シューアラクレーム",  description: "カスタードたっぷり毎日出来立てのシュークリーム！" ,instagramUrl:"https://www.instagram.com/p/DGVOLfGPjnV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+  { name: "シューアラクレーム",  description: "カスタードたっぷり毎日出来立てのシュークリーム！",instagramUrl:"https://www.instagram.com/p/DGVOLfGPjnV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
   { name: "ベリーベリーロール【季節限定】",  description: "実は昔のブッシュドノエルを商品化したベリークリームとチョコスポンジのロールケーキ" },
   { name: "すだちのタルト【季節限定】", description: "優しい甘みのメレンゲと酸味のあるすだちが相性抜群のタルト！",instagramUrl:"https://www.instagram.com/p/DBS7y1dPJkB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
   { name: "タルト・オ・ポンム【季節限定】", description: "ボリューム満点キャラメルとリンゴのオリジナルタルト！",instagramUrl:"https://www.instagram.com/p/DBvk-8ZvMNf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
