@@ -18,11 +18,11 @@ header h1 {
 }
 
 header img {
-  max-width: 40%;  /* 画像がヘッダーの幅に収まるように */
-  height: auto;    /* 画像の高さを自動調整 */
-  display: block;  /* 画像の下に余白をなくすためにブロック表示 */
-  margin: auto;    /* 画像を中央に配置 */
-  transform: translateX(-4%); /* 画面幅の5%だけ左に移動 */
+  max-width: 40%;  
+  height: auto;   
+  display: block;  
+  margin: auto;    
+  transform: translateX(-4%); /* 画面幅の4%だけ左に移動 */
 }
 
 .social-links {
