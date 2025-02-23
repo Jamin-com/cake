@@ -16,7 +16,7 @@ function showNextImage() {
 images[currentIndex].classList.add('active');
 
 // 3秒ごとに画像を切り替える
-setInterval(showNextImage, 4000);
+setInterval(showNextImage, 3500);
 document.addEventListener('DOMContentLoaded', () => {
     const backToTopButton = document.querySelector('.back-to-top');
 
