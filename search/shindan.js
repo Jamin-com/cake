@@ -5,7 +5,7 @@ const cakes = [
   { name: "紅茶のロールケーキ", description: "紅茶アールグレイが香るロールケーキ！女性に人気" },
   { name: "オペラ",  description: "コーヒーとガナッシュ、特製バタークリームの三重奏",instagramUrl:"https://www.instagram.com/p/DGFk8nKxtTq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
   { name: "ジャマイカ",  description: "ラム酒のかおりがコーヒーの風味に合う大人な味",instagramUrl:"https://www.instagram.com/p/DB3L9rhx3cx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
-  { name: "ジャージープリン",  description: "とろとろプリンの上にはおいしい生クリーム！キャラメルソース付き" },
+  { name: "ジャージープリン",  description: "とろとろプリンの上にはおいしい生クリーム！キャラメルソース付き",instagramUrl:" https://www.instagram.com/p/DGaWhGQRcIm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="},
   { name: "ジャージープリン",  description: "美味しいジャージークリームを味わうためのシンプルなロールケーキ！",instagramUrl:"https://www.instagram.com/p/DC6WVytvwSN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
   { name: "スフレ", description: "チーズケーキの定番。シンプルな蔵王チーズのおいしさが味わえるスフレ" },
   { name: "シューアラクレーム",  description: "カスタードたっぷり毎日出来立てのシュークリーム！",instagramUrl:"https://www.instagram.com/p/DGVOLfGPjnV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
@@ -34,7 +34,7 @@ const cakes = [
   { name: "はっちくんのベイクドレモン",  description: "レモンが香る濃厚で小さいチーズケーキ",instagramUrl:"https://www.instagram.com/p/C_navRIPt8Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
   { name: "オレンジのタルト【季節限定】",  description: "期間限定さわやかな甘さのオレンジタルト。中にはカスタード" },
   { name: "ドゥブルフロマージュ",  description: "蔵王チーズを使ったチーズケーキ、上にはフランボワーズソース",instagramUrl:"https://www.instagram.com/p/DEpChRlPyfj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
-  { name: "いちごのタルト【季節限定】",  description: "いちごたっぷりのタルト！中にはカスタード" },  
+  { name: "いちごのタルト【季節限定】",  description: "いちごたっぷりのタルト！中にはカスタード",instagramUrl:"https://www.instagram.com/p/DGuSGJzvy16/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },  
   { name: "デリスオショコラ",  description: "中にはブリュレとチョコレートムースが入った濃厚チョコケーキ。洋酒キルシュに漬けたグリオットのアクセント",instagramUrl:"https://www.instagram.com/p/DALQskovxtJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },   
   { name: "ミックスベリーのタルト【季節限定】",  description: "ベリーたっぷりのタルト！あえてクリームはなくタルトを生かした味わい",instagramUrl:"https://www.instagram.com/p/DFHxMslRX4-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" }, 
   { name: "安納芋のタルト【季節限定】",  description: "とっても甘いさつまいも安納芋をタルトに！中にはリンゴのコンポート",instagramUrl:"https://www.instagram.com/p/DClnr7fPAPN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
@@ -44,7 +44,8 @@ const cakes = [
 { name: "ロワイヤルフレーズ【季節限定】",  description: "いちごムースの上にはホワイトチョコムース。さらにフレッシュないちご！",instagramUrl:"https://www.instagram.com/p/DF7VqSQRV3H/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="},
 { name: "ショコラアムール【季節限定】",  description: "ハート型のガトーショコラの中にフランボワーズとチョコチップを入れ焼きこみました！",instagramUrl:"https://www.instagram.com/p/DFzuuJSPnkp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
 { name: "カシスエマロン【季節限定】",  description: "相性の良いカシスとマロンのムースをクレープで包みました。寒い時期にぴったり" },
-{ name: "タルト・オ・ショコラ・フランボワーズ【季節限定】",  description: "ビターなチョコとフランボワーズを贅沢に合わせました！仕上げは軽いシブーストクリーム",instagramUrl:"https://www.instagram.com/p/DF91-NSRAK-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },];
+{ name: "タルト・オ・ショコラ・フランボワーズ【季節限定】",  description: "ビターなチョコとフランボワーズを贅沢に合わせました！仕上げは軽いシブーストクリーム",instagramUrl:"https://www.instagram.com/p/DF91-NSRAK-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+{ name: "シュワルツヴェルダー",  description: "シュワルツヴェルダーキルシュ酒をふんだんに使用した大人向けケーキ！チョコレートとフランボワーズのムースと相性抜群",instagramUrl:"https://www.instagram.com/p/DG-TVl_xfNA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },];
 
 const searchBox = document.getElementById('searchBox');
 const cakeList = document.getElementById('cakeList');
