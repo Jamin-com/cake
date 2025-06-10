@@ -45,7 +45,10 @@ const cakes = [
 { name: "ショコラアムール【季節限定】",  description: "ハート型のガトーショコラの中にフランボワーズとチョコチップを入れ焼きこみました！",instagramUrl:"https://www.instagram.com/p/DFzuuJSPnkp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
 { name: "カシスエマロン【季節限定】",  description: "相性の良いカシスとマロンのムースをクレープで包みました。寒い時期にぴったり" },
 { name: "タルト・オ・ショコラ・フランボワーズ【季節限定】",  description: "ビターなチョコとフランボワーズを贅沢に合わせました！仕上げは軽いシブーストクリーム",instagramUrl:"https://www.instagram.com/p/DF91-NSRAK-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
-{ name: "シュワルツヴェルダー",  description: "シュワルツヴェルダーキルシュ酒をふんだんに使用した大人向けケーキ！チョコレートとフランボワーズのムースと相性抜群",instagramUrl:"https://www.instagram.com/p/DG-TVl_xfNA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },];
+{ name: "シュワルツヴェルダー",  description: "シュワルツヴェルダーキルシュ酒をふんだんに使用した大人向けケーキ！チョコレートとフランボワーズのムースと相性抜群",instagramUrl:"https://www.instagram.com/p/DG-TVl_xfNA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+{ name: "アムール",  description: "マカロンの間にフレッシュライムのムースをサンドした一品。甘いマカロンにいちごの酸味がぴったりマッチします",instagramUrl:"https://www.instagram.com/p/DJ_XUdgxZWV/?utm_source=ig_web_copy_link" },
+{ name: "マリブマンゴー",  description: "マンゴー＆ココナッツムースにココナッツリキュール(お酒)を効かせ、アクセントにはチョコムース！",instagramUrl:"https://www.instagram.com/p/DJ_XUdgxZWV/?utm_source=ig_web_copy_link" },
+{ name: "ジャンジャンブル",  description: "チーズケーキとチョコムースの組み合わせ。ショウガの風味がアクセント！マカロンの帽子で飾りました",instagramUrl:"https://www.instagram.com/p/DJbPUEVxC83/?utm_source=ig_web_copy_link" },];
 
 const searchBox = document.getElementById('searchBox');
 const cakeList = document.getElementById('cakeList');
