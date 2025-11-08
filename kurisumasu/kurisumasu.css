@@ -115,7 +115,7 @@ animation:fadeInUp 1s ease-out;
 
 .cake-item h3{
 
- font-size:1.6rem;
+ font-size:1.3rem;
 
  color: #2a3d4b;
 
@@ -576,5 +576,6 @@ text-align: center;
     to {transform: translateY(0); opacity: 1}
 
 }
+
 
 
