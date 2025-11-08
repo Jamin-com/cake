@@ -1,0 +1,580 @@
+
+body {
+
+  margin: 0;
+
+  font-family: serif;
+
+}
+
+
+
+header {
+
+  background-color: rgb(0, 56, 46); /* 深緑 */
+
+  color: white;
+
+  padding: 5px;
+
+  text-align: center;
+
+  position: relative;
+
+  z-index: 1;
+
+}
+
+
+
+
+
+
+
+header img {
+
+  max-width: 30%;  /* 画像がヘッダーの幅に収まるように */
+
+  height: auto;    /* 画像の高さを自動調整 */
+
+  display: block;  /* 画像の下に余白をなくすためにブロック表示 */
+
+  margin: auto;    /* 画像を中央に配置 */
+
+  transform: translateX(-4%); /* 画面幅の5%だけ左に移動 */
+
+}
+
+
+
+
+
+
+
+h1 {
+
+  font-size: 2.5em;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+p {
+
+  font-size: 1em;
+
+}
+
+
+
+
+
+.christmas-cake-intro{padding:20px;text-align:center;background-color:#efefef;}
+
+.reservation-info{font-size:1.0em;color:rgb(25, 25, 25);font-weight:normal;margin-bottom:50px;line-height:1.8; animation: fadeInUp 1s ease-out;}
+
+.cake-list-container{display:flex;flex-direction:column;align-items:center;gap:40px;padding:0 10px 60px;}
+
+
+
+.cake-item{
+
+background-color:#ffffff;
+
+border:1px solid #ddd;
+
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+
+padding:20px;
+
+width:90%;
+
+max-width:600px;
+
+text-align:left;
+
+cursor:pointer;
+
+transition:transform 0.3s ease,box-shadow 0.3s ease;
+
+animation:fadeInUp 1s ease-out;
+
+}
+
+.cake-item:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,0.2);}
+
+
+
+.cake-image-box{width:100%;height:auto;overflow:hidden;border-radius:0px;margin-bottom:15px;}
+
+.cake-image-box img{width:100%;height:auto;display:block;object-fit:cover;border-radius:0px;}
+
+
+
+.cake-item h3{
+
+ font-size:1.6rem;
+
+ color: #2a3d4b;
+
+margin:10px 0;
+
+text-align:center;
+
+}
+
+
+
+.cake-item p{font-size:1.1rem;line-height:1.5;padding:5px 0;text-align:center;}
+
+
+
+.detail-link{color:rgb(0,56,46);font-weight:bold;text-align:right!important;margin-top:10px;font-size:1.0rem!important;}
+
+.detail-link span{display:inline-block;margin-left:5px;transition:transform 0.2s;}
+
+.cake-item:hover .detail-link span{transform:translateX(3px);}
+
+.hero h1 {
+
+  font-size: 3rem;
+
+  animation: slideInLeft 1s ease-out;
+
+}
+
+
+
+.hero p {
+
+  font-size: 1.5rem;
+
+  margin-top: 10px;
+
+  animation: slideInRight 1s ease-out;
+
+}
+
+
+
+
+
+
+
+
+
+h2 {
+
+  font-size:  1.7em;
+
+  color: #2a3d4b;
+
+  animation: fadeInUp 1s ease-out;
+
+}
+
+
+
+h3 {
+
+ font-size: 1.2em;
+
+  color: #2a3d4b;
+
+  animation: fadeInUp 1s ease-out;
+
+}
+
+
+
+.background {
+
+  margin-top: 30px;
+
+  padding: 0;
+
+  background-color: #ffffff;
+
+ 
+
+  text-align: center;
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
+
+/* 本文のスタイル */
+
+
+
+.text-content2 {
+
+  position: relative; /* 本文は相対的に配置 */
+
+  z-index: 1; /* 文字が前面に来るように */
+
+  color: rgb(0, 29, 8);  /* 本文の色 */
+
+  font-size: 1.2rem;  /* 本文のサイズ */
+
+  padding: 20px;
+
+  line-height: 1.6;
+
+  text-align: left;
+
+   animation: fadeInUp 1s ease-out;
+
+}
+
+
+
+footer {
+
+  background-color: rgb(0, 56, 46);
+
+  color: white;
+
+  text-align: center;
+
+  padding: 20px;
+
+}
+
+
+
+
+
+/* 背景のアニメーション */
+
+@keyframes moveBackground {
+
+  0% {
+
+    transform: scale(1);
+
+  }
+
+  50% {
+
+    transform: scale(1.2); /* 図形を少し拡大 */
+
+  }
+
+  100% {
+
+    transform: scale(1);
+
+  }
+
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+
+  from {
+
+    opacity: 0;
+
+  }
+
+  to {
+
+    opacity: 1;
+
+  }
+
+}
+
+
+
+@keyframes fadeInUp {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(20px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+
+
+@keyframes slideInLeft {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateX(-50px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+  }
+
+}
+
+
+
+@keyframes slideInRight {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateX(50px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+  }
+
+}
+
+
+
+@keyframes moveBackground {
+
+  0% {
+
+    transform: translateX(0);
+
+  }
+
+  100% {
+
+    transform: translateX(-50%);
+
+  }
+
+
+
+ 
+
+}
+
+/* --- モーダル (ポップアップ詳細画面) のスタイル --- */
+
+
+
+.modal {
+
+    display: none; /* 初期状態では非表示 */
+
+    position: fixed; /* 画面に固定 */
+
+    z-index: 1000; /* 最前面に表示 */
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    overflow: auto; /* 内容が画面を超えた場合にスクロール可能に */
+
+    background-color: rgba(0,0,0,0.6); /* 半透明の黒い背景 */
+
+    justify-content: center; /* 中央寄せ */
+
+    align-items: center; /* 中央寄せ */
+
+    padding: 20px;
+
+}
+
+
+
+.modal-content {
+
+    background-color: #fefefe;
+
+    /* margin: auto; は不要になるため削除 */
+
+    padding: 30px;
+
+    height: 100%; /* ★ 修正: 画面の高さいっぱいにする */
+
+    border: 1px solid #888;
+
+    width: 90%;
+
+    max-width: 500px;
+
+    border-radius: 0; /* ★ 修正: 角を丸くしない（画面端に合わせるため） */
+
+    box-shadow: -5px 0 15px rgba(0,0,0,0.3); /* 左側に影をつける */
+
+    position: fixed; /* ★ 修正: 画面の右端に固定する */
+
+    top: 0;
+
+    right: 0;
+
+    animation: slideInRight 0.4s; /* ★ 修正: アニメーション名を変更 */
+
+    overflow-y: auto; /* コンテンツが画面を超えた場合、モーダル内をスクロール可能に */
+
+}
+
+.modal-close {
+
+    color: #aaa;
+
+    float: right;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    line-height: 1;
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 15px;
+
+}
+
+
+
+.modal-close:hover,
+
+.modal-close:focus {
+
+    color: #333;
+
+    text-decoration: none;
+
+}
+
+
+
+.modal-title {
+
+    font-family: 'Great Vibes', serif;
+
+    font-size: 1.6em;
+
+    color: rgb(0, 56, 46);
+
+    margin-bottom: 15px;
+
+    text-align: center;
+
+}
+
+
+
+.modal-image {
+
+    width: 100%;
+
+    height: auto;
+
+ 
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.modal-detail, .modal-prices {
+
+font-size: 1.1rem;
+
+line-height: 1.8; /* ★ 修正: 1.6 から 1.8 に上げて、行間を広げる */
+
+margin-bottom: 15px; /* ★ 修正: 10pxから15pxに上げて、段落間のスペースも広げる */
+
+text-align: left;
+
+white-space: pre-wrap;
+
+}
+
+
+
+.modal-note {
+
+font-size: 0.9rem;
+
+color: #333; /* 確認のため、色を黒に固定 */
+
+margin-top: 20px;
+
+line-height: 1.8; /* ★ 追加: ここにも行間を設定 */
+
+text-align: center;
+
+}
+
+
+
+@keyframes slideInRight {
+
+    /* 右端の外側 (-100%) から開始 */
+
+    from {transform: translateX(100%);}
+
+    /* 0% (画面内) までスライド */
+
+    to {transform: translateX(0);}
+
+}
+
+
+
+@keyframes slideInTop {
+
+    from {transform: translateY(-50px); opacity: 0}
+
+    to {transform: translateY(0); opacity: 1}
+
+}
+
+
