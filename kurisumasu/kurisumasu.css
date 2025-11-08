@@ -578,7 +578,7 @@ text-align: center;
 }
 
 
-@media (max-width:500px) {
+@media (max-width:800px) {
     /* モーダルコンテンツ */
     .modal-content {
         /*
@@ -586,7 +586,7 @@ text-align: center;
          * モーダルの幅を100%にして画面いっぱいに広げます。
          * これにより、画面の右端と左端からのバランスが取れます。
          */
-        width: 100%;
+        width: 80%;
         
         /*
          * 内部のパディングを30pxから20pxに減らすことで、
@@ -596,6 +596,7 @@ text-align: center;
         padding: 20px;
     }
 }
+
 
 
 
