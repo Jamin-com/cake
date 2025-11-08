@@ -578,7 +578,7 @@ text-align: center;
 }
 
 
-@media (max-width:350px) {
+@media (max-width:250px) {
     /* モーダルコンテンツ */
     .modal-content {
         /*
@@ -596,6 +596,7 @@ text-align: center;
         padding: 20px;
     }
 }
+
 
 
 
