@@ -33,7 +33,7 @@ header {
 
 header img {
 
-  max-width: 30%;  /* 画像がヘッダーの幅に収まるように */
+  max-width: 40%;  /* 画像がヘッダーの幅に収まるように */
 
   height: auto;    /* 画像の高さを自動調整 */
 
@@ -596,6 +596,7 @@ text-align: center;
         padding: 20px;
     }
 }
+
 
 
 
