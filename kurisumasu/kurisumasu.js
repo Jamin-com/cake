@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     image: '1ku.jpeg',
 
-                    description: 'フレッシュないちごをサンドしたクリスマス定番のいちごショートのホールケーキ。<br>北海道産の産地指定道東(根釧地区)の生クリームをたっぷりと使用しています',
+                    description: 'フレッシュないちごをサンドしたクリスマス定番のいちごショートのホールケーキ。<br>北海道産の産地指定道東(根釧地区)の生クリームをたっぷりと使用しています。',
 
                     prices: '4号 (12cm) / ¥4,104(税込)<br>5号 (15cm) / ¥4,806(税込)<br>6号 (18cm) / ¥5,724(税込)'
 
@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     image: '2ku.jpeg',
 
-                    description: 'ジャマン冬の定番、根強い人気のミックスベリータルトのクリスマスバージョン。<br>しっかり焼きこんだ自家製アーモンドクリームの上に、たっぷりのベリーが乗った贅沢タルトです。',
+                    description: 'ジャマン冬の定番、根強い人気のミックスベリータルトのクリスマスバージョン。<br>しっかり焼きこんだタルト生地とアーモンドクリームの上に、たっぷりのベリーが乗った贅沢タルトです。',
 
                     prices: '16cm / ¥4,903(税込)<br>18cm / ¥5,578(税込)'
 
@@ -246,5 +246,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
     }
+
 
 });
